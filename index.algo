@@ -1,0 +1,29 @@
+ALGORITHM Checkpoint1
+VAR
+   C: CHAR;
+   compchar, compMot, compVoy: INTEGER := 0;
+BEGIN
+
+    REPEAT
+
+      Write("Donnez un char");
+      Read (c);
+
+       compchar = compChar + 1;
+
+      IF (c = "") THEN
+
+       compMot = compMot + 1;
+      END IF
+
+      IF (c = "a" OR c = "e" OR c = "i" OR c = "o" OR c = "u" OR_c="y" OR c = "A" OR c= "E" OR C="I" OR_c="0" OR_c="U" OR c ="Y") THEN
+
+      compvoy = compVoy + 1;
+      END IF
+
+   UNTIL (c = ".")
+
+   Write("Le nbr de char",compChar);
+   Write("Le nbr de mots", compMot+1);
+   Write("Le nbr de voy", compVoy);
+END
